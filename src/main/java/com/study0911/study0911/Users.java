@@ -13,7 +13,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 @Entity
-@Table(name = "USERS")
+@Table(name = "users")
 @Getter
 @Setter
 @AllArgsConstructor(staticName = "of")
@@ -22,7 +22,6 @@ import lombok.experimental.Accessors;
 public class Users {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     private String id;
 

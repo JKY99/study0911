@@ -1,0 +1,19 @@
+server:
+  #servlet.context-path: /api
+  port: 8080
+  session:
+    timeout: 1800
+
+spring.profiles.active: local
+
+spring:
+  config:
+    import:
+      - optional:config/database.yml
+
+springdoc:
+  version: v1.0.0
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /docs
+  show-actuator: true
